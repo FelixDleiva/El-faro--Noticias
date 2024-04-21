@@ -4,15 +4,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Portada - El Faro</title>
+<!-- Enlace a la fuente de Google Fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
 <style>
+  /* Estilos globales */
   body {
     background-color: #7895B2;
     color: #17224D; 
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
   }
 
+  /* Estilos del encabezado */
   header {
     background-color: #7895B2; 
     color: #17224D; 
@@ -20,57 +24,64 @@
     text-align: center;
   }
 
+  /* Estilos del menú de navegación */
   header img {
     max-width: 120px; 
     height: auto;
   }
-
   nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
   }
-
   nav li {
     display: inline;
     margin-right: 20px;
   }
-
   nav a {
     color: #17224D;
     text-decoration: none;
+    transition: font-weight 0.3s, text-decoration 0.3s;
+  }
+  nav a:hover {
+    font-weight: bold; /* Aplicando negrita */
+    text-decoration: none; /* Quitando subrayado */
   }
 
+  /* Estilos del contenido principal */
   main {
     padding: 20px;
+    display: grid; /* Utilizando Grid Layout */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
   }
-
   section {
     margin-bottom: 30px;
   }
-
   article {
     border: 1px solid #17224D;
     padding: 20px;
-    margin-bottom: 20px;
+    background-color: #fff;
+    transition: background-color 0.3s, color 0.3s;
   }
-
+  article:hover {
+    background-color: #000;
+    color: #fff;
+  }
   article h4 {
     margin-top: 0;
   }
-
   img {
-    max-width: 80%;
+    max-width: 100%;
     height: auto;
   }
 
+  /* Estilos del pie de página */
   footer {
-    background-color: #7895B2;
-    color: #17224D;
+    background-color: #c9d2d0; /* Color de fondo del footer */
+    color: #31231e; /* Color de letra del footer */
     text-align: center;
     padding: 20px;
-    position: fixed;
-    bottom: 0;
     width: 100%;
   }
 </style>
@@ -114,14 +125,12 @@ El menor sobrevivió, mientras que el político murió cuando recibía atención
   
   <video controls>
   <source src="https://www.youtube.com/embed/d9vxcBJDQ8A" type="video/mp4">
-  Tu navegador no soporta el elemento de video.
+  Tu navegador no soporta el elemento de video. <!-- Mensaje de respaldo en caso de que el navegador no pueda reproducir el video -->
+  <a href="https://www.youtube.com/watch?v=d9vxcBJDQ8A" target="_blank">Haz clic aquí para ver el video en YouTube</a> <!-- Enlace a YouTube -->
 </video>
-  
   </article>
-  
   </section>
   
-
   <section id="deporte">
     <h2>Sección de Deporte</h2>
     <article>
@@ -131,19 +140,19 @@ El menor sobrevivió, mientras que el político murió cuando recibía atención
       <p>Manchester City y Arsenal igualaron 0-0 en el duelo por la fecha 30 de la Premier League y se alejaron de la cima, que quedó en solitaria propiedad de Liverpool.</p>
     </article>
     <article>
-    <h4>Mac Allister fue figura y dio una gran asistencia para que Liverpool le gane a Brighton un partido clave en la Premier</h4>
-    <p>Categoría: Deporte</p>
-     <img src="https://a.espncdn.com/combiner/i?img=%2Fphoto%2F2024%2F0331%2Fr1312341_1296x729_16%2D9.jpg&w=1140&cquality=40&format=jpg">
+      <h4>Mac Allister fue figura y dio una gran asistencia para que Liverpool le gane a Brighton un partido clave en la Premier</h4>
+      <p>Categoría: Deporte</p>
+        <img src="https://a.espncdn.com/combiner/i?img=%2Fphoto%2F2024%2F0331%2Fr1312341_1296x729_16%2D9.jpg&w=1140&cquality=40&format=jpg">
     <p>Alexis Mac Allister fue decisivo para que Liverpool consiga un triunfo clave en la Premier League ante Brighton por 2-1. El 10 de los Reds, la figura de la cancha, dio una asistencia maravillosa para que el egipcio Mohamed Salah consiga la remontada ante el conjunto del sur de Inglaterra en la segunda parte. Con la victoria, el equipo de Klopp aprovecha el empate en City-Arsenal y alcanza la cima de la liga doméstica en soledad. Con este gran triunfo, Liverpool llega a la cima con 67 puntos en 29 partidos. Quedan detrás Arsenal (65 puntos) y Manchester City (64 puntos) que igualaron 0-0</p>
-  </article>
+    </article>
   </section>
 
   <section id="negocios">
     <h2>Sección de Negocios</h2>
     <article>
-    <h4>¿Por qué Corona puso fin a su tarjeta de crédito?</h4>
-    <p>Categoría: Negocios</p>
-    <img src="https://media.cnnchile.com/sites/2/2024/03/A_UNO_985371-740x430.jpg">
+      <h4>¿Por qué Corona puso fin a su tarjeta de crédito?</h4>
+      <p>Categoría: Negocios</p>
+      <img src="https://media.cnnchile.com/sites/2/2024/03/A_UNO_985371-740x430.jpg">
     <p>La compañía solicitó el cese de funciones de la tarjeta de crédito no bancaria a la Comisión para el Mercado Financiero (CMF), luego de que el directorio y el equipo ejecutivo de SCC analizaran diversas posibilidades.
 
 La mora de los titulares de las líneas de crédito y los altos niveles de inflación impidieron continuar con este mecanismo, debido a que han incrementado los costos fijos de operación, según informó el Diario Financiero.
@@ -151,11 +160,11 @@ La mora de los titulares de las líneas de crédito y los altos niveles de infla
 De hecho, las pérdidas de enero a septiembre de 2023 fueron de $6.885 millones. En tanto, la Tarjeta Corona tuvo una participación en el mercado en el sector de retail de 2,7%, con una mora de 48,9% al cierre del año pasado.
 
 La tarjeta de crédito dejó de funcionar el miércoles 27 de marzo y los titulares ya fueron notificados, informándoles las condiciones y plazos de pago.</p>
-  </article>
+    </article>
     <article>
-    <h4>CMF alerta por presunta estafa y usura en plataformas de crédito e inversión</h4>
-    <p>Categoría: Negocios</p>
-    <img src="https://media.cnnchile.com/sites/2/2024/03/FRAUDE-740x430.jpg">
+      <h4>CMF alerta por presunta estafa y usura en plataformas de crédito e inversión</h4>
+      <p>Categoría: Negocios</p>
+       <img src="https://media.cnnchile.com/sites/2/2024/03/FRAUDE-740x430.jpg">
     <p>El pasado martes la Comisión para el Mercado Financiero (CMF) alertó a usuarios y público en general por diversas entidades que “ofrecen créditos y no se encuentran reguladas ni inscritas en los registros de la CMF“.
 
 Además, advirtió sobre plataformas de inversión no reguladas.
@@ -180,32 +189,17 @@ Por otra parte, también se informó que las aplicaciones Tifi Moni y Luca, no s
 Adicionalmente, la entidad presentará una denuncia al Ministerio Público en contra de quienes resulten responsables de una falsa empresa de cobranzas denominada Cobrapre, por el presunto delito de estafa.
 
 También se hará una denuncia en contra de quienes resulten responsables de Multigarantía S.A.G.R. por el delito de estafa, ya que esta informa falsamente ser una Sociedad Anónima de Garantía Recíproca (SAGR) sin estar registrada en la CMF de conformidad con lo dispuesto en los artículos 17 y 18 de la Ley N°20.179, para ejercer dicho giro.</p>
-  </article>
-      <article>
-    <h4> ¡Alerta! Nuevo avance tecnológico podría reemplazar al petróleo</h4>
-    <p>Categoría: Negocios</p>
-    <audio controls>
+    </article>
+    <article>
+      <h4>¡Alerta! Nuevo avance tecnológico podría reemplazar al petróleo</h4>
+      <p>Categoría: Negocios</p>
+      <audio controls>
   <source src="https://www.soundjay.com/button/beep-07.wav" type="audio/wav">
   Tu navegador no soporta el elemento de audio.
 </audio>
     <p>Expertos revelan un descubrimiento revolucionario que podría cambiar el futuro energético mundial: una tecnología innovadora promete reemplazar al petróleo. Desarrollada en secreto durante años, esta nueva solución podría ofrecer una alternativa sostenible y eficiente, utilizando fuentes renovables y métodos avanzados de conversión de energía. Líderes globales y la industria están atentos a este desarrollo que podría transformar la manera en que obtenemos y utilizamos energía.</p>
-  </article>
- 
- 
-  
-  
+    </article>
   </section>
-  <h1>
-  <p>
-  Elfaro
-  </p>
-  </h1>
-
-
-
-
-
-
 </main>
 
 <footer>
